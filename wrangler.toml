@@ -1,0 +1,16 @@
+name = "discord-oidc"
+compatibility_date = "2025-04-04"
+main = "build/worker/shim.mjs"
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
+
+
+[vars]
+DISCORD_CLIENT_ID = "1404027157788885062"
+DISCORD_CLIENT_SECRET = "SvTW5U6WjxiwU9MI3zybnZLeSgojwtFl"
+DISCORD_REDIRECT_URL = "https://st.dslzl.top/oauth/oidc"
+
+[[kv_namespaces]]
+binding = "KEYS_STORE"
+id = "0e7839638831416babb61133987878ea"
